@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="css/gen.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/browse.css">
+    <script>
+        function nextChange()
+        {
+            var first = document.getElementById("country_filter");
+            var second = document.getElementById("city_filter");
+            second.options.length = 0; // 清除second下拉框的所有内容
+            if(first.selectedIndex == 0)
+            {
+                second.options.add(new Option("By city", "0", false, true));
+            }
+            if(first.selectedIndex == 1)
+            {
+                second.options.add(new Option("Shanghai", "0", false, true));
+                second.options.add(new Option("Kunming", "2"));
+                second.options.add(new Option("Yantai", "3"));
+                second.options.add(new Option("Beijing", "1"));
+            }
+
+            if(first.selectedIndex == 2)
+            {
+                second.options.add(new Option("Tokyo", "0", false, true));
+                second.options.add(new Option("Osaka", "1"));
+                second.options.add(new Option("Kamakura", "2"));
+            }
+            if(first.selectedIndex == 3)
+            {
+                second.options.add(new Option("Rome", "0", false, true));
+                second.options.add(new Option("Milan", "1"));
+                second.options.add(new Option("Venice", "2"));
+                second.options.add(new Option("Florence", "3"));
+            }
+            if(first.selectedIndex == 4)
+            {
+                second.options.add(new Option("New York", "0", false, true));
+                second.options.add(new Option("San Francisco", "1"));
+                second.options.add(new Option("Washington", "2"));
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <nav>
+    <ul class="navbar">
+        <li id="nav_icon"><img src="../img/logo.jpg" alt="XX" width="40px" height="40px" ></li>
+        <li class="nav_first_word"><a href="homepage.html">Home</a></li>
+        <li class=" nav_current nav_back_word"><a href="browse.html">Browse</a></li>
+        <li class="nav_back_word"><a href="search.html">Search</a></li>
+        <li id="nav_last">My account ▼
+            <ul>
+                <li><img src="../img/up.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/upload.html">Upload</a></li>
+                <li><img src="../img/my.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/myphoto.html">My photo</a></li>
+                <li><img src="../img/love.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/favourite.html">Favourite</a></li>
+                <li><img src="../img/login.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="../index.html">Login</a></li>
+            </ul>
+        </li>
+        <li id="nav_man"><img src="../img/man.jpg" alt="error" width="40px" height="40px"></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <div class="search_title">
+                <h1>Filter</h1>
+            </div>
+            <div class="search_below in_middle">
+                <select name="content_filter" id="content_filter">
+                    <option value="none" selected>By content</option>
+                    <option value="Sea">Sea</option>
+                    <option value="Building">Building</option>
+                    <option value="Forest">Forest</option>
+                    <option value="People">People</option>
+                </select>
+                <select name="country_filter" id="country_filter" onchange="nextChange()">
+                    <option value="none" selected>By country</option>
+                    <option value="Sea">China</option>
+                    <option value="Building">Japan</option>
+                    <option value="Forest">Italy</option>
+                    <option value="People">America</option>
+                </select>
+                <select name="city_filter" id="city_filter">
+                    <option value="none" selected>By city</option>
+                </select>
+                <label for="search_by_filter">
+                    <img src="../img/search.jpg" alt="error" height="40px" width="40px" class="search_button">
+                </label>
+                <input type="button" id="search_by_filter" onclick="alert('已完成搜索')" style="visibility: hidden">
+            </div>
+
+            <div class="browse_pic">
+                <div class="picWall">
+                    <ul>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic1.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic2.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic3.jpg" alt="error"></a></div></li>
+                    </ul>
+                    <ul>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic4.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic5.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic6.jpg" alt="error"></a></div></li>
+                    </ul>
+                    <ul>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic7.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic8.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic9.jpg" alt="error"></a></div></li>
+                    </ul>
+                    <ul>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic10.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic11.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic12.jpg" alt="error"></a></div></li>
+                    </ul>
+                    <ul>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic13.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic14.jpg" alt="error"></a></div></li>
+                        <li><div><a href="detail.html"><img src="../img/browsepic/pic15.jpg" alt="error"></a></div></li>
+                    </ul>
+                </div>
+                <h1 id="page_number">
+                    <ul>
+                        <li>&#60;</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>...</li>
+                        <li>9</li>
+                        <li>&#62;</li>
+                    </ul>
+                </h1>
+            </div>
+        </section>
+
+        <aside>
+            <div id="aside_top">
+                <div class="search_title" >
+                    <h1>Search by Title</h1>
+                </div>
+                <div class="search_below">
+                    <input type="text" placeholder="Search">
+                    <label for="search_by_word">
+                        <img src="../img/search.jpg" alt="error" height="40px" width="40px" class="search_button">
+                    </label>
+                    <input type="button" id="search_by_word" onclick="alert('已完成搜索')" style="visibility: hidden">
+                </div>
+            </div>
+            <div id="aside_mid">
+                <div class="search_title">
+                    <h1>Hot Country</h1>
+                </div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">Italy</a></div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">China</a></div>
+                <div class="search_below hyperlink"><a href="#" onclick="alert('已完成切换')">Japan</a></div>
+            </div>
+            <div id="aside_bottom">
+                <div class="search_title">
+                    <h1>Hot City</h1>
+                </div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">Rome</a></div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">Shanghai</a></div>
+                <div class="search_below hyperlink"><a href="#" onclick="alert('已完成切换')">Tokyo</a></div>
+            </div>
+            <div id="aside_bottom2">
+                <div class="search_title">
+                    <h1>Hot Content</h1>
+                </div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">People</a></div>
+                <div class="search_below in_middle hyperlink"><a href="#" onclick="alert('已完成切换')">Building</a></div>
+                <div class="search_below hyperlink"><a href="#" onclick="alert('已完成切换')">Scenery</a></div>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="word_footer_search">
+        Copyright ©2020 PROJEKT--NoGameNoSleep Github--woxihuanjiangguo
+    </footer>
+</body>
+</html>

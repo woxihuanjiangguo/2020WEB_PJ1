@@ -1,0 +1,194 @@
+div.search_title{
+    background: #333333;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: left;
+    padding-top:14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+div.search_title h1{
+    margin-left: 14px;
+    margin-top: 2px;
+    color: azure;
+    text-indent: 0.7em;
+}
+div.search_below{
+    height: 800px;
+    background: antiquewhite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div.detail_body div.search_below{
+    height: 70px;
+    background: darkgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.5em;
+}
+div.detail_body div.search_below.in_middle{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: dotted 1px rgba(80,113,112,0.93);
+}
+main{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1426px;
+    font-family: "Microsoft YaHei UI",sans-serif;
+}
+h1#topic{
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: default;
+    width: 300px;
+    margin:0 auto;
+    padding:40px;
+    //background: crimson;
+    text-align: center;
+}
+span#author{
+    font-weight: lighter;
+    font-size: 0.7em;
+    margin-top:10px;
+    float: right;
+}
+div.detail_body img{
+    border-radius: 10px;
+    display: block;
+}
+
+/*左边*/
+div.detail_body_left{
+    margin-top: 1%;
+    margin-left: 8%;
+    float: left;
+    width: 550px;
+    height: 480px;
+}
+div.detail_body_left a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 3% auto;
+}
+img#like_icon{
+    border-radius: 25px;
+}
+img#like_icon:hover{
+    opacity: 0.7;
+}
+img#like_icon:active{
+    transform: translate(5%,5%);
+}
+/*右边*/
+div.detail_body_right {
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+}
+div.detail_body_right div.search_title{
+    margin-top: 3%;
+}
+div.detail_body_right div.search_title:nth-child(3){
+    margin-top: 3%;
+}
+div.detail_body_right div.search_below.like_number{
+    color: crimson;
+    text-align: center;
+    font-size: 1.9em;
+}
+div.detail_body_right div.search_below.like_number h1{
+    padding-top: 3.5%;
+}
+div.detail_body_right div.search_below.image_details h1{
+    text-indent: 0.9em;
+    padding-top: 4%;
+    color:snow;
+    font-size: 0.9em;
+}
+pre{
+    float: left;
+    margin:3% auto;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+p{
+    display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    main{
+        width: 800px;
+        height: 1400px;
+    }
+    main div.search_below{
+        height: 1300px;
+    }
+    main div.search_below div.detail_body_left{
+        margin-left: 123px;
+    }
+    main div.search_below div.detail_body_right{
+        width: 450px;
+        margin-right: 170px;
+        font-size: 0.9rem;
+        margin-top: 30px;
+    }
+    main div.search_below div.detail_body_right div.search_below.image_details,
+    main div.search_below div.detail_body_right div.search_below.like_number{
+        line-height: 2.5rem;
+    }
+    pre{
+        display: none;
+    }
+    p{
+        display: block;
+        float: right;
+        width: 600px;
+        font-size: 1.2rem;
+        margin-top: 50px;
+        margin-right: 90px;
+        text-indent: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 500px;
+        height: 1300px;
+    }
+    main div.search_below{
+        height: 1200px;
+    }
+    main div.search_below div.detail_body_left{
+        margin-left: 50px;
+        width: 80%;
+
+    }
+    main div.search_below div.detail_body_left img{
+        width: 100%;
+    }
+    main div.search_below div.detail_body_right{
+        margin-right: 80px;
+        width: 350px;
+        font-size: 0.9rem;
+        margin-top: -90px;
+    }
+    main div.search_below div.detail_body_right div.search_below.image_details,
+    main div.search_below div.detail_body_right div.search_below.like_number{
+        line-height: 2.5rem;
+    }
+    pre{
+        display: none;
+    }
+    p{
+        display: block;
+        float: right;
+        width: 450px;
+        font-size: 1rem;
+        margin-top: 50px;
+        margin-right: 20px;
+        text-indent: 2rem;
+        line-height: 1.4rem;
+    }
+}

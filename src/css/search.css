@@ -1,0 +1,208 @@
+div.search_title{
+    background: #333333;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: left;
+    padding-top:14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+div.search_title h1{
+    margin-left: 25px;
+    margin-top: 2px;
+    color: azure;
+}
+
+section div.search_below{
+    height: 83%;
+    background: darkgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main div.search_below{
+    height: 83%;
+    background: antiquewhite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main div.search_below{
+    height: 90%;
+}
+section{
+    width:1426px;
+    margin: 50px auto;
+    height: 300px;
+    font-family: "Microsoft YaHei UI",sans-serif;
+}
+main{
+    height: 700px;
+    width: 1426px;
+    margin: 10px auto;
+    font-family: "Microsoft YaHei UI",sans-serif;
+}
+section a{
+    display: block;
+    width: 180px;
+    margin: 10px auto;
+    float: bottom;
+}
+section a img{
+    border-radius: 10px;
+}
+section a:hover img{
+    opacity: 0.9;
+}
+section label{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+section label:hover{
+    color: aquamarine;
+    text-decoration: underline;
+    cursor: pointer;
+}
+input[type="text"],#textarea{
+    outline: none;
+    background: azure;
+    text-indent: 0.2em;
+    margin-top: 3px;
+}
+input[type="text"]:hover,#textarea:hover{
+    background: blanchedalmond;
+}
+#choice1 input[type="text"]{
+    margin-left: 10px;
+    font-size: 1.1em;
+    height: 25px;
+    width: 95%;
+    color: black;
+    font-family: "Microsoft YaHei UI",sans-serif;
+    opacity: 0.8;
+}
+#textarea{
+    margin-left: 10px;
+    font-size: 1.1em;
+    height: 50px;
+    width: 95.2%;
+    font-family: "Microsoft YaHei UI",sans-serif;
+    color: black;
+    opacity: 0.8;
+}
+section p{
+    display: block;
+    height: 10px;
+    padding:15px 15px;
+}
+main .search_below ul{
+    width: 98%;
+}
+main .search_below ul li{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    float: left;
+    width: 48%;
+    margin-top: 0.8%;
+    margin-left: 2%;
+    border-radius: 10px;
+    height: 170px;
+}
+main .search_below ul li img{
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 0.7%;
+    border-radius: 10px;
+}
+main .search_below ul li img:hover{
+    opacity: 0.8;
+}
+main .search_below ul li:hover{
+    background: burlywood;
+}
+main .search_below ul:first-child{
+    padding-top: 0.2%;
+}
+
+main .search_below ul li div{
+    float: right;
+    width: 60%;
+    height: 90%;
+    margin-top: 5%;
+}
+main .search_below ul li div h1{
+    font-weight: bold;
+    padding-bottom: 5%;
+    cursor: default;
+}
+main .search_below ul li div p{
+    line-height: 20px;
+}
+main .search_below ul li div p:after{
+    content: ' ...';
+}
+
+main h1#page_number{
+    margin-left: 660px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+main h1#page_number:hover{
+    cursor: default;
+}
+
+main h1#page_number ul li{
+    display: inline;
+    margin-left: 0;
+}
+main h1#page_number ul li:nth-child(2){
+    color: crimson;
+    text-decoration: underline;
+}
+main h1#page_number ul li:hover{
+    cursor: pointer;
+    color: crimson;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    section{
+        width: 900px;
+    }
+    main{
+        width: 900px;
+        height: 650px;
+    }
+    main .search_below ul li div{
+        float: right;
+        width: 40%;
+        height: 80%;
+        margin-top: 3%;
+        font-size: 0.7rem;
+    }
+    main h1#page_number{
+        margin-left: 390px;
+    }
+}
+@media screen and (max-width: 600px) {
+    section{
+        width: 550px;
+    }
+    main{
+        width: 550px;
+        height: 1250px;
+    }
+    main .search_below ul li{
+        clear: both;
+        width: 97%;
+    }
+    main .search_below ul li div{
+        float: right;
+        width: 40%;
+        height: 80%;
+        margin-top: 3%;
+        font-size: 0.85rem;
+        margin-right: 3%;
+    }
+    main h1#page_number{
+        margin-left: 220px;
+    }
+}

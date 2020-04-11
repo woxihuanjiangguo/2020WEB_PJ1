@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../css/gen.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <script>
+        function uploadImg(file,imgNum){
+            var widthImg = 535;
+            var heightImg = 345;
+            var div = document.getElementById(imgNum);
+            if (file.files && file.files[0]){
+                div.innerHTML ='<img id="upImg">'; //生成图片
+                var img = document.getElementById('upImg'); //获得用户上传的图片节点
+                img.onload = function(){
+                    img.width = widthImg;
+                    img.height = heightImg;
+                }
+                var reader = new FileReader(); //判断图片是否加载完毕
+                reader.onload = function(evt){
+                    if(reader.readyState === 2){ //加载完毕后赋值
+                        img.src = evt.target.result;
+                    }
+                }
+                reader.readAsDataURL(file.files[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+<nav>
+    <ul class="navbar">
+        <li id="nav_icon"><img src="../../img/logo.jpg" alt="XX" width="40px" height="40px" ></li>
+        <li class="nav_first_word"><a href="../homepage.html">Home</a></li>
+        <li class="nav_back_word"><a href="../browse.html">Browse</a></li>
+        <li class="nav_back_word"><a href="../search.html">Search</a></li>
+        <li id="nav_last" style="color: aquamarine">My account ▼
+            <ul>
+                <li><img src="../../img/up.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="upload.html">Upload</a></li>
+                <li><img src="../../img/my.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="myphoto.html">My photo</a></li>
+                <li><img src="../../img/love.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="favourite.html">Favourite</a></li>
+                <li><img src="../../img/login.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="../../index.html">Login</a></li>
+            </ul>
+        </li>
+        <li id="nav_man"><img src="../../img/man.jpg" alt="error" width="40px" height="40px"></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="search_title">
+        <h1>Upload</h1>
+    </div>
+    <div class="search_below">
+        <form action="myphoto.html" method="get">
+            <div id="preview">
+                <label for="uploadButton">点击上传图片</label>
+                <img src="" alt="" >
+            </div>
+            <input type="file" accept="image/*" name="pictureUpload" id="uploadButton" onchange="uploadImg(this,'preview')" hidden>
+            <div class="mainForm">
+                <ul>
+                    <li>
+                        <h1>图片标题：</h1>
+                        <input type="text" name="content_title">
+                    </li>
+                    <li>
+                        <h1>图片描述：</h1>
+                        <textarea name="content_description" id="" cols="50" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <h1>拍摄国家：</h1>
+                        <input type="text" name="content_country">
+                    </li>
+                    <li>
+                        <h1>拍摄城市：</h1>
+                        <input type="text" name="content_city">
+                    </li>
+                </ul>
+                <input type="submit" onclick="alert('已完成上传')">
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer id="word_footer_search">
+    Copyright ©2020 PROJEKT--NoGameNoSleep Github--woxihuanjiangguo
+</footer>
+</body>
+</html>

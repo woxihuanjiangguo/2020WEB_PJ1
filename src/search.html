@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/gen.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <nav>
+    <ul class="navbar">
+        <li id="nav_icon"><img src="../img/logo.jpg" alt="XX" width="40px" height="40px" ></li>
+        <li class="nav_first_word"><a href="homepage.html">Home</a></li>
+        <li class="nav_back_word"><a href="browse.html">Browse</a></li>
+        <li class="nav_current nav_back_word"><a href="search.html">Search</a></li>
+        <li id="nav_last">My account ▼
+            <ul>
+                <li><img src="../img/up.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/upload.html">Upload</a></li>
+                <li><img src="../img/my.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/myphoto.html">My photo</a></li>
+                <li><img src="../img/love.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="user/favourite.html">Favourite</a></li>
+                <li><img src="../img/login.jpg" alt="error" height="35px" width="35px" class="userIcon"><a href="../index.html">Login</a></li>
+            </ul>
+        </li>
+        <li id="nav_man"><img src="../img/man.jpg" alt="error" width="40px" height="40px"></li>
+    </ul>
+</nav>
+
+    <section>
+        <div class="search_title">
+            <h1>Search</h1>
+        </div>
+        <div class="search_below">
+            <div id="choice1">
+                <p>
+                    <input type="radio" value="Search By Title"  id="radio_1" name="search_method">
+                    <label for="radio_1">Search by Title</label>
+                </p>
+                <input type="text" placeholder="Type in your title" name="search_content_title">
+            </div>
+            <div id="choice2">
+                <p>
+                    <input type="radio" value="Search By Description" id="radio_2" name="search_method">
+                    <label for="radio_2">Search by Description</label>
+                </p>
+                <textarea name="search_content_description" id="textarea" cols="30" rows="2" placeholder="Type in your description"></textarea>
+            </div>
+
+            <a href="#" onclick="alert('已完成搜索')"><img src="../img/searchbutton.png" alt="er" height="60px" width="180px"></a>
+        </div>
+    </section>
+
+    <main>
+        <div class="search_title">
+            <h1>Search Results</h1>
+        </div>
+        <div class="search_below">
+            <ul>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="detail.html"><img src="../img/otherpic/searchpic.jpg" alt="er"height="160px" width="auto"></a>
+                    <div>
+                        <h1>Title</h1>
+                        <p>A very nice place to visit.It's the best picture in the folder.The sky is blue and the air is clean.There is a magnificent church.Very gorgeous and fascinating!!</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <h1 id="page_number">
+            <ul>
+                <li>&#60;</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>...</li>
+                <li>9</li>
+                <li>&#62;</li>
+            </ul>
+        </h1>
+    </main>
+
+    <footer id="word_footer_search">
+        Copyright ©2020 PROJEKT--NoGameNoSleep Github--woxihuanjiangguo
+    </footer>
+</body>
+</html>

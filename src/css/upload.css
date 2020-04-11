@@ -1,0 +1,147 @@
+main div.search_title{
+    background: #333333;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: left;
+    padding-top:14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+main div.search_title h1{
+    margin-left: 25px;
+    margin-top: 2px;
+    color: azure;
+}main div.search_below{
+     padding-top:3%;
+     height: 97%;
+     background: antiquewhite;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+main{
+     height: 1000px;
+     width: 1426px;
+     margin:50px auto;
+     margin-bottom: 80px;
+}
+form div#preview{
+    width: 40%;
+    height: 350px;
+    border:10px dotted burlywood;
+    border-radius: 60px;
+    margin: auto;
+}
+div#preview:hover{
+    background: cornsilk;
+}
+div#preview label{
+    display: block;
+    font-size: 2rem;
+    margin: 28% auto;
+    width: 34%;
+    cursor: pointer;
+}
+div#preview label:hover{
+    text-decoration: underline;
+    color: coral;
+}
+form div#preview img{
+    width: 100%;
+    display: block;
+    margin: 0.5% auto;
+    border-radius: 10px;
+}
+form div.mainForm{
+    width: 95%;
+    height: 70%;
+    margin: 5% auto;
+}
+form div.mainForm ul li{
+    margin-top:1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+form div.mainForm ul li h1{
+    padding-top: 0.5%;
+    text-indent: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+form div.mainForm ul li input[type="text"]{
+    text-indent: 0.4rem;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 1.2rem;
+    margin-top: 0.7%;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    width: 96.5%;
+}
+form div.mainForm ul li textarea{
+    width: 96.5%;
+    text-indent: 0.4rem;
+    outline: none;
+    border-radius: 10px;
+    font-family: "Microsoft YaHei UI",sans-serif;
+    margin-left: 1.2rem;
+    margin-top: 0.7%;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+form div.mainForm ul li:hover{
+    background: burlywood;
+}
+form div.mainForm input[type="submit"]{
+    display: block;
+    margin: 2% auto;
+    cursor: pointer;
+    background: cornflowerblue;
+    width:100px;
+    height:50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: azure;
+    font-size: 1.4rem;
+}
+form div.mainForm input[type="submit"]:hover{
+    font-size: 1.6rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 600px){
+    main{
+        width: 900px;
+        height: 900px;
+    }
+    main div.search_below div#preview label[for]{
+        font-size: 1.9rem;
+        width: 200px;
+        margin:150px auto;
+        margin-left: 90px;
+    }
+}
+@media screen and (max-width: 600px){
+    main{
+        width: 500px;
+        height: 900px;
+    }
+    main div.search_below div#preview label[for]{
+        font-size: 1.5rem;
+        width: 90%;
+        margin-top: 37%;
+        margin-left: 33%;
+    }
+    main div.search_below div#preview{
+        width: 85%;
+    }
+    form div.mainForm ul li{
+        margin-top:1%;
+        padding-bottom: 5%;
+        border-radius: 10px;
+    }
+    form div.mainForm ul li input[type="text"],form div.mainForm ul li textarea{
+        width: 93%;
+    }
+}
+
+
